@@ -1,0 +1,76 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(22, 38, 60);
+  padding: 32px
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(255, 255, 254);
+  width: min(90vw, 90vh);
+  height: 90vh;
+  border-radius: .3rem;
+  margin: 0 auto;
+  padding: 60px;
+}
+
+.texts{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 40px;
+  margin: 0;
+  text-align: center;
+}
+
+.instructions {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  padding-left: 12px ;
+  padding-right: 12px;
+}
+
+
+.dice{
+  cursor: pointer;
+  margin: 14px;
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0px 1px 3px rgb(154, 154, 154);
+  border-radius: .5rem;
+  text-align: center;
+}
+.held{
+  background-color: rgb(91, 233, 152);
+}
+
+.dices{
+  min-width: 100%;
+  /* background-color: aqua; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 50px;
+}
+
+button{
+  padding: 8px;
+  width: 140px ;
+  font-weight: bold;
+  font-size: 26px;
+  background-color: rgb(14, 74, 213);
+  border-radius: 7px;
+  border: none;
+  color: aliceblue;
+}
